@@ -37,7 +37,7 @@ public class ContaTerminal {
         String saldoFormatado = decimalFormat.format(saldo);
 
         // Criar a mensagem formatada
-        String mensagem = String.format("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$ %s já está disponível para saque.",
+        String mensagem = String.format("Olá %s! Obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$ %s já está disponível para saque.",
                                          nome, agencia, conta, saldoFormatado);
 
         // Exibir a mensagem
