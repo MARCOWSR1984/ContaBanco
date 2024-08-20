@@ -2,7 +2,7 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class ContaTerminal {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
         // Ler informações do usuário
@@ -37,7 +37,7 @@ public class ContaTerminal {
         String saldoFormatado = decimalFormat.format(saldo);
 
         // Criar a mensagem formatada
-        String mensagem = String.format("Olá %s! Obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$ %s já está disponível para saque.",
+        String mensagem = String.format("Olá %s! Obrigado por criar uma conta em nosso banco. Sua agência é %s, conta %d e seu saldo R$ %s já está disponível para saque.",
                                          nome, agencia, conta, saldoFormatado);
 
         // Exibir a mensagem
